@@ -1,0 +1,83 @@
+.aside .swiper {
+    width: 100%;
+}
+.aside .swiper-slide {
+    cursor: pointer;
+}
+
+.aside .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.aside .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aside .swiper:first-child {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.aside .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.aside .mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.aside .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+}
+
+.aside .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.aside .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.aside .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 576px) {
+    .aside .mySwiper {
+        display: none;
+    }
+    .aside .mySwiper2 {
+        height: 100%;
+    }
+    .aside .swiper-slide img {
+        min-height: 250px;
+    }
+}

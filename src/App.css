@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+input {
+    max-width: 100%;
+}

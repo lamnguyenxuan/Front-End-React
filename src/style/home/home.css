@@ -1,0 +1,305 @@
+.home {
+    background-color: rgb(236, 235, 235);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    max-width: 100%;
+}
+.aside {
+    max-width: 1200px;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-root {
+    width: 65%;
+}
+.slide img {
+    height: 440px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.thumb {
+    padding: 0 !important;
+    width: 18% !important;
+}
+.aside img {
+    border-radius: 10px;
+}
+.news .row:not(:last-child) {
+    margin-bottom: 15px;
+}
+.news .row {
+    align-items: center;
+}
+
+.news h5 {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    min-height: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.news p {
+    margin-top: 0.1em;
+    margin-bottom: 0;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.news {
+    background-color: white;
+    padding: 15px 10px 10px;
+    border-radius: 15px;
+}
+
+.news h4 {
+    font-size: 16px;
+    border-left: 4px solid black;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+@media (max-width: 576px) {
+    .news {
+        display: none;
+    }
+}
+.sliders {
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.productsSlide {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-color: red;
+    border-width: 25px;
+    border-style: solid;
+    border-radius: 35px;
+    padding: 10px 15px 0;
+    background-color: white;
+}
+.productsSlide .swiper {
+    padding: 10px 5px 20px;
+}
+.productsSlide h3 {
+    font-size: 25px;
+    border-left: 4px solid black;
+    padding-left: 8px;
+    font-weight: bold;
+}
+.productsSlide img {
+    max-width: 100%;
+}
+@media (max-width: 576px) {
+    .productsSlide {
+        border-width: 15px;
+    }
+    .productsSlide h3 {
+        font-size: 20px;
+    }
+    .productsSlide {
+        margin-top: 0;
+    }
+}
+.brandProducts {
+    margin-top: 15px;
+    padding: 5px 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.brandLists {
+    padding: 15px 0 35px;
+}
+.brandList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.brandItem {
+    width: 15%;
+    object-fit: cover;
+}
+.logoBrand {
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid green;
+}
+.brandItem img {
+    border-radius: 15px;
+    height: 108px;
+    width: 100%;
+}
+.brandItem h5 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.brandLists h3 {
+    font-size: 25px;
+    font-weight: bold;
+    border-left: 4px solid black;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .brandItem {
+        width: 26%;
+        margin-bottom: 10px;
+    }
+}
+.extra1,
+.extra2 {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.extra1 img,
+.extra2 img {
+    border-radius: 10px;
+}
+
+.iphoneHot,
+.ltHot,
+.products-list-search {
+    margin-top: 15px;
+    padding: 5px 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.iphoneLists,
+.ltLists,
+.search-lists {
+    padding: 15px 0 0;
+}
+.iphoneList,
+.ltList,
+.search-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.iphoneItem,
+.ltItem,
+.searchItem {
+    width: 20%;
+    padding: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.iphoneLists h3,
+.ltLists h3,
+.search-lists h3 {
+    font-size: 25px;
+    font-weight: bold;
+    border-left: 4px solid black;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+.logoIphone,
+.logoLT,
+.logoSearchItem {
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid green;
+}
+
+.iphoneItem h5,
+.ltItem h4,
+.searchItem h4 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.titleIphone,
+.titleLT,
+.titleSearchItem {
+    margin-bottom: 7px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 15px;
+    margin-bottom: 0 !important;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.priceIphone input,
+.priceLT input,
+.priceSearchItem input,
+.productsSlide input {
+    border: none;
+    white-space: nowrap;
+    color: #d62727;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+}
+.product-mini-info input {
+    white-space: nowrap;
+    color: #d62727;
+    font-weight: bold;
+    font-size: 26px;
+    border: none;
+}
+.add-to-cart input {
+    white-space: nowrap;
+    margin-left: 20px;
+    color: #d62727;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+    background: #f5f5f5;
+}
+
+.search-lists {
+    padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .iphoneItem,
+    .ltItem,
+    .searchItem {
+        width: 33.333%;
+    }
+}
+@media (max-width: 576px) {
+    .iphoneItem,
+    .ltItem,
+    .searchItem {
+        width: 50%;
+    }
+    .extra1,
+    .extra2 {
+        margin: 20px auto;
+    }
+}

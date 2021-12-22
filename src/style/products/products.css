@@ -1,0 +1,70 @@
+.productsSlide .swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.productsSlide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.productsSlide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid rgb(62, 100, 62);
+    border-radius: 10px;
+}
+.productsSlide h4 {
+    margin-bottom: 7px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    color: #000;
+}
+.productsSlide h5 {
+    white-space: nowrap;
+    color: #d62727;
+    font-weight: 900;
+    font-size: 14px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 30px !important;
+}
+.productsSlide .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0px !important;
+}
+.swiper-button-prev {
+    left: 0 !important;
+}
+.swiper-button-next {
+    right: 0 !important;
+}
