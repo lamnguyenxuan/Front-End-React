@@ -14,12 +14,12 @@ export default ({ id, image, title, price, quantity }) => {
                             <i className="fas fa-times"></i>
                         </div>
                     </Col>
-                    <Col xs={3} sm={2} lg={1}>
+                    <Col xs={3} sm={1} lg={1}>
                         <div className="image-cart">
                             <img src={image} alt="Ảnh lỗi" />
                         </div>
                     </Col>
-                    <Col xs={8} sm={6} lg={6}>
+                    <Col xs={8} sm={5} lg={6}>
                         <div className="content-cart">
                             <h5>{title}</h5>
                             {/* <div className="content-cart-extras">
@@ -34,14 +34,14 @@ export default ({ id, image, title, price, quantity }) => {
                             </div> */}
                         </div>
                     </Col>
-                    <Col xs={6} sm={3} lg={2}>
+                    <Col xs={6} sm={2} lg={2}>
                         <div className="count-cart-item">
                             <input onClick={() => dispatch(subItem(id))} type="button" value={"-"} />
                             <input type="button" value={quantity} />
                             <input onClick={() => dispatch(addItem(id))} type="button" value={"+"} />
                         </div>
                     </Col>
-                    <Col xs={6} sm={12} lg={2}>
+                    <Col xs={6} sm={3} lg={2}>
                         <div className="count-cart-price">
                             <NumberFormat value={price * quantity} thousandSeparator={true} suffix=' VND' />
                         </div>

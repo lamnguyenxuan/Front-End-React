@@ -11,6 +11,18 @@ import NumberFormat from 'react-number-format';
 import { addItem } from "../../slices/cart.slice";
 import { useDispatch } from "react-redux";
 
+const Modal = (props) => {
+    return (
+        <div className="modal-containerX">
+            <div className="modalX">
+                <i className="far fa-check-circle"></i>
+                <p>Bạn đã thêm sản phẩm vào giỏ hàng thành công</p>
+                <button onClick={props.hide}>OK</button>
+            </div>
+        </div>
+    )
+}
+
 export default () => {
     const showMessage = (t) => {
         alert("Sản phẩm " + t + " đã được thêm thành công vào giỏ hàng")
@@ -20,9 +32,11 @@ export default () => {
     const id = param.id;
     const product = getById(id);
     const [status, setStatus] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     return (
         <div className="description-product">
+            {showModal && <Modal hide={() => setShowModal(false)} />}
             <div className="description-top">
                 <h3>Mô tả sản phẩm</h3>
                 <h4>{product.title}</h4>
@@ -70,7 +84,7 @@ export default () => {
                     <NumberFormat value={product.newPrice} thousandSeparator={true} suffix=' VND' />
                 </div>
                 <div className="button-add-to-cart">
-                    <button onClick={() => { dispatch(addItem(product.id)), showMessage(product.title) }}>Thêm vào giỏ</button>
+                    <button onClick={() => { dispatch(addItem(product.id)), setShowModal(true) }}>Thêm vào giỏ</button>
                 </div>
             </div>
         </div>
