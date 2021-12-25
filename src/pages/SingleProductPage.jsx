@@ -1,14 +1,14 @@
 import "../style/singleProduct/singleProduct.css"
 import { NavLink } from "react-router-dom";
-import Banner from "../components/Banner";
-import ProductMiniSlider from "../components/ProductMiniSlider";
+import Banner from "../components/Product/Banner";
+import ProductMiniSlider from "../components/Product/ProductMiniSlider";
 import { Container, Row, Col } from "react-bootstrap";
-import ProductMiniInfo from "../components/ProductMiniInfo";
-import ProductMiniExtra from "../components/ProductMiniExtra";
-import Enter from "../components/Enter";
-import DescriptionProduct from "../components/DescriptionProduct";
-import DetailProduct from "../components/DetailProduct";
-import News from "../components/News";
+import ProductMiniInfo from "../components/Product/ProductMiniInfo";
+import ProductMiniExtra from "../components/Product/ProductMiniExtra";
+import Enter from "../components/Utilities/Enter";
+import DescriptionProduct from "../components/Product/DescriptionProduct";
+import DetailProduct from "../components/Product/DetailProduct";
+import News from "../components/Home/Aside/News/News";
 
 const SingleProductPage = () => {
     return (

@@ -235,3 +235,18 @@
     background-color: rgb(206, 25, 25);
     border-radius: 5px;
 }
+
+@media (max-width: 1199px) {
+    .total-cart {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .count-cart-item {
+        margin-top: 10px;
+    }
+    .button-cart button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

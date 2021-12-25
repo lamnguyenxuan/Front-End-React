@@ -1,12 +1,12 @@
-import Aside from "../components/Aside";
-import SliderProducts from "../components/SliderProducts";
-import BrandProducts from "../components/BrandProducts";
+import Aside from "../components/Home/Aside/Aside";
+import SliderProducts from "../components/Home/SliderProducts";
+import BrandProducts from "../components/Home/BrandProducts";
 import "../style/home/home.css"
-import Extra1 from "../components/Extra1";
-import IphoneHot from "../components/IphoneHot";
-import Extra2 from "../components/Extra2";
-import LThot from "../components/LThot";
-import Enter from "../components/Enter";
+import Extra1 from "../components/Home/Extra1";
+import IphoneHot from "../components/Home/IphoneHome/IphoneHot";
+import Extra2 from "../components/Home/Extra2";
+import LThot from "../components/Home/LaptopTabletHome/LThot";
+import Enter from "../components/Utilities/Enter";
 
 const HomePage = () => {
     return (

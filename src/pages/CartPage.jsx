@@ -1,13 +1,13 @@
-import ProductCart from '../components/ProductCart';
+import ProductCart from '../components/Cart/ProductCart';
 import '../style/cart/cart.css'
 import { Container, Row, Col } from 'react-bootstrap';
-import TotalProductCart from '../components/TotalProductCart';
+import TotalProductCart from '../components/Cart/TotalProductCart';
 import { useDispatch, useSelector } from "react-redux"
 import { NavLink } from 'react-router-dom';
 import { selectTotalItems } from "../slices/cart.slice";
 import { rsBrand } from "../slices/brandCheck.slice";
 import { all } from '../slices/products.slice';
-import CartInfo from '../components/CartInfo';
+import CartInfo from '../components/Cart/CartInfo';
 
 const CartPage = () => {
     const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const CartPage = () => {
                 {
                     totalItem > 0 ? (<Container>
                         <Row>
-                            <Col xs={9}>
+                            <Col xs={12} lg={12} xl={9}>
                                 <div className='products-cart'>
                                     {
                                         products.map((product, index) => {
@@ -31,7 +31,7 @@ const CartPage = () => {
                                     }
                                 </div>
                             </Col>
-                            <Col xs={3}>
+                            <Col xs={12} lg={12} xl={3}>
                                 <TotalProductCart />
                             </Col>
                         </Row>

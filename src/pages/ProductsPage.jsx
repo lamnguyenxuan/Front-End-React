@@ -1,7 +1,7 @@
 import "../style/productsPage/productsPage.css";
 import { NavLink } from "react-router-dom";
-import BannerProducts from "../components/BannerProducts";
-import ProductsCategory from "../components/ProductsCategory";
+import BannerProducts from "../components/Category/BannerProducts";
+import ProductsCategory from "../components/Category/ProductsCategory";
 
 const ProductsPage = () => {
     return <div className="productsPages">

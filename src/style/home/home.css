@@ -4,6 +4,9 @@
     margin-right: auto;
     font-family: "Roboto", sans-serif;
 }
+img {
+    cursor: pointer !important;
+}
 .container {
     max-width: 100%;
 }
@@ -48,6 +51,7 @@
     margin: 0;
     margin-bottom: 10px;
     font-size: 15px;
+    font-weight: 600;
 }
 
 .news p {
@@ -76,6 +80,11 @@
 @media (max-width: 576px) {
     .news {
         display: none;
+    }
+}
+@media (max-width: 767px) {
+    .news {
+        margin-top: 20px;
     }
 }
 .sliders {
@@ -143,11 +152,23 @@
     border-radius: 15px;
     padding: 5px;
     border: 2px solid green;
+    max-width: 140px;
+    margin: auto;
 }
+
 .brandItem img {
     border-radius: 15px;
     height: 108px;
     width: 100%;
+    display: inline-block;
+}
+@media (max-width: 576px) {
+    .logoBrand {
+        padding: 2px;
+    }
+    .brandItem img {
+        height: 80px;
+    }
 }
 .brandItem h5 {
     margin-top: 15px;

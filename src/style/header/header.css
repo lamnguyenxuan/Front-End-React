@@ -202,11 +202,12 @@
 }
 .total-item {
     position: absolute;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
-    width: 16px;
-    text-align: center;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: red;
     color: white;

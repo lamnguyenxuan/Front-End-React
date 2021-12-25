@@ -111,6 +111,10 @@
     background-color: #98b1a8;
     color: black;
 }
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgb(67, 67, 238) !important;
+}
 
 @media (max-width: 576px) {
     .option-content {

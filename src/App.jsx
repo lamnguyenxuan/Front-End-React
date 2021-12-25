@@ -1,8 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom"
-import { Header, Footer } from "./components";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import './App.css'
-import ScrollToTop from "./components/ScrollToTop";
-import ScrollButton from "./components/ScrollButton";
+import ScrollToTop from "./components/Utilities/ScrollToTop";
+import ScrollButton from "./components/Utilities/ScrollButton";
 
 const App = () => {
   return (
